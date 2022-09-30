@@ -1,0 +1,41 @@
+<p>post-bugs works!</p>
+
+<div class="container mw-100" id="generalContainer">
+    <div class="row">
+      <div class="col-12">
+      <h3>Submit your Bug</h3>
+      </div>
+    </div>
+    <div class="row">
+  
+      <div class="col-12">
+        <form (ngSubmit)="onSubmit()">
+        <input type="text" [(ngModel)]="bug" name="title">
+
+        <input type="text" [(ngModel)]="bug" name="title">
+
+          <select [(ngModel)]="bug" name="bug.priority">
+            <option value="Minor ">Minor</option>
+            <option value="Major">Major</option>
+            <option value="Critica">Critica</option>
+          </select>
+
+          <select [(ngModel)]="bug" name="bug.reporter">
+            <option value="QA ">QA</option>
+            <option value="PO">PO</option>
+            <option value="DEV">DEV</option>
+          </select>
+
+          <select [(ngModel)]="bug" name="bug.reporter">
+            <option value="Review">Review</option>
+            <option value="Done">Done</option>
+            <option value="Rejected">Rejected</option>
+          </select>
+
+
+          <button type="submit" class="btn btn-outline-primary btn-sm">Submit</button>
+        </form>
+      </div>
+  
+    </div>
+  </div>

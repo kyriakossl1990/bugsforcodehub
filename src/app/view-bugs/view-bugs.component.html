@@ -1,0 +1,37 @@
+<p>view-bugs works!</p>
+
+
+<div class="container mw-100" id="generalContainer">
+    <div class="row">
+        <div class="col-12">
+            <h3>Bugs</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Priority</th>
+                        <th scope="col">Reporter</th>
+                        <th scope="col">Date Created</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let bug of bugs; let i = index">
+                        <th scope="row">{{i + 1}}</th>
+                        <td>{{bug.title}}</td>
+                        <td>{{bug.priority}}</td>
+                        <td>{{bug.reporter}}</td>
+                        <td>{{bug.dateCreated}}</td>
+                        <td>{{bug.status}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
